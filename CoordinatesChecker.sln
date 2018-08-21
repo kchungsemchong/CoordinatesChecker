@@ -3,9 +3,50 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinatesChecker.Data", "CoordinatesChecker.Data\CoordinatesChecker.Data.csproj", "{5E22BC6C-E162-43BD-B709-EE2F1DF271A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinatesChecker.Contracts", "CoordinatesChecker.Contracts\CoordinatesChecker.Contracts.csproj", "{61C2D96E-709D-41B6-B1A5-48C23C7A3868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinatesChecker.Services", "CoordinatesChecker.Services\CoordinatesChecker.Services.csproj", "{D10080B9-8119-42D7-A844-AF1B221205AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinatesChecker.Proxies", "CoordinatesChecker.Proxies\CoordinatesChecker.Proxies.csproj", "{90212D71-0B22-4CBF-9DBA-C1F815129CE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{EB6CBB74-576E-4449-84E4-8D58FB37858C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinatesChecker.ConsoleHost", "CoordinatesChecker.ConsoleHost\CoordinatesChecker.ConsoleHost.csproj", "{F64BFC89-8943-498E-8E55-FB2AB6ACED04}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E22BC6C-E162-43BD-B709-EE2F1DF271A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E22BC6C-E162-43BD-B709-EE2F1DF271A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E22BC6C-E162-43BD-B709-EE2F1DF271A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E22BC6C-E162-43BD-B709-EE2F1DF271A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61C2D96E-709D-41B6-B1A5-48C23C7A3868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C2D96E-709D-41B6-B1A5-48C23C7A3868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C2D96E-709D-41B6-B1A5-48C23C7A3868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C2D96E-709D-41B6-B1A5-48C23C7A3868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10080B9-8119-42D7-A844-AF1B221205AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10080B9-8119-42D7-A844-AF1B221205AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10080B9-8119-42D7-A844-AF1B221205AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10080B9-8119-42D7-A844-AF1B221205AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90212D71-0B22-4CBF-9DBA-C1F815129CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90212D71-0B22-4CBF-9DBA-C1F815129CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90212D71-0B22-4CBF-9DBA-C1F815129CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90212D71-0B22-4CBF-9DBA-C1F815129CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64BFC89-8943-498E-8E55-FB2AB6ACED04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64BFC89-8943-498E-8E55-FB2AB6ACED04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64BFC89-8943-498E-8E55-FB2AB6ACED04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64BFC89-8943-498E-8E55-FB2AB6ACED04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F64BFC89-8943-498E-8E55-FB2AB6ACED04} = {EB6CBB74-576E-4449-84E4-8D58FB37858C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AADC3541-8DCF-491C-A640-AA301DE6BEDA}
