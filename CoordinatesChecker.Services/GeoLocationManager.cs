@@ -17,10 +17,23 @@ namespace CoordinatesChecker.Services
 			_geoLocationRepository = geoLocationRepository;
 		}
 
-		public GeoLocation GetCoordinates(string name)
+		public GeoLocationData GetCoordinates(string name)
 		{
-			GeoLocation result = null;
-			result = _geoLocationRepository.GetCoordinates(name);
+			GeoLocationData result = null;
+			IGeoLocationRepository geoLocationRepository = _geoLocationRepository ?? new GeoLocationRepository();
+
+			var geolocation = geoLocationRepository.GetCoordinates(name);
+
+
+			if (geolocation != null)
+			{
+				result = new GeoLocationData
+				{
+					Name = geolocation.Name,
+					Latitude = geolocation.Latitude,
+					Longitude = geolocation.Longitude
+				};
+			}
 
 			return result;
 		}

@@ -12,8 +12,9 @@ namespace CoordinatesChecker.ConsoleClient
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Enter your Location");
-			string location = Console.ReadLine();
+			//Console.WriteLine("Enter your Location");
+			//string location = Console.ReadLine();
+			string location = "Port Louis";
 			if (!string.IsNullOrEmpty(location))
 			{
 				GeoLocationClient proxy = new GeoLocationClient("tcpEP");
