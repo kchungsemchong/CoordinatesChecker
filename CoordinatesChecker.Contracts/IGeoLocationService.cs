@@ -7,6 +7,6 @@ namespace CoordinatesChecker.Contracts
 	public interface IGeoLocationService
 	{
 		[OperationContract]
-		GeoLocation GetCoordinates(string name);
+		GeoLocationData GetCoordinates(string name);
 	}
 }

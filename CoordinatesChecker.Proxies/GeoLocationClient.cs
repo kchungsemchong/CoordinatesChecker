@@ -1,12 +1,16 @@
 ﻿using CoordinatesChecker.Contracts;
-using CoordinatesChecker.Data.Entities;
 using System.ServiceModel;
 
 namespace CoordinatesChecker.Proxies
 {
 	public class GeoLocationClient : ClientBase<IGeoLocationService>, IGeoLocationService
 	{
-		public GeoLocation GetCoordinates(string name)
+		public GeoLocationClient(string endpoint) : base (endpoint) 
+		{
+			//This will allow us to specify the desired enpoint which is found in the config
+		}
+
+		public GeoLocationData GetCoordinates(string name)
 		{
 			return Channel.GetCoordinates(name);
 		}
